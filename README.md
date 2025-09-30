@@ -9,8 +9,6 @@ Este projeto é uma demonstração básica de arquitetura de microserviços usan
 - **Products Service**: Gerencia produtos  
 - **Orders Service**: Gerencia pedidos
 
-## Como executar
-
 ### Pré-requisitos
 - Node.js (v14 ou superior)
 - npm
