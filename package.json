@@ -1,0 +1,23 @@
+{
+  "name": "micro-service",
+  "version": "1.0.0",
+  "description": "MICRO-SERVICE API",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:gateway": "cd gateway && npm start",
+    "start:users": "cd services/users-service && npm start",
+    "start:products": "cd services/products-service && npm start",
+    "start:orders": "cd services/orders-service && npm start",
+    "start:all": "concurrently \"npm run start:users\" \"npm run start:products\" \"npm run start:orders\" \"npm run start:gateway\"",
+    "dev": "concurrently \"npm run dev:users\" \"npm run dev:products\" \"npm run dev:orders\" \"npm run dev:gateway\""
+  },
+  "keywords": ["microservices", "express", "api-gateway", "nodejs"],
+  "license": "ISC",
+  "author": "Guilherme Rocha Pessanha",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
