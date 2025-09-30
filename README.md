@@ -2,7 +2,7 @@
 
 Este projeto é uma demonstração básica de arquitetura de microserviços usando Node.js, Express e API Gateway.
 
-##Estrutura
+## Estrutura
 
 - **Gateway**: API Gateway que roteia requests para os microserviços apropriados
 - **Users Service**: Gerencia usuários
